@@ -17,8 +17,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //init
         val items = ArrayList<Model>()
 
+        //set data
         items.add(
             Model(
                 "Сегодня",
@@ -67,21 +69,21 @@ class MainActivity : AppCompatActivity() {
         listView.adapter = adapter
 
 
+        // information about passengers
         listView.setOnItemClickListener { adapter, view, i, l ->
 //            Toast.makeText(this,"clicked ${items[i]}",Toast.LENGTH_SHORT).show()
 //            items.removeAt(i);
 //            val adapter = Adapter(this, R.layout.record, items)
 //            listView.adapter = adapter
             val intent = Intent(this, Passengers::class.java)
-            // To pass any data to next activity
 //            intent.putExtra("keyIdentifier", value)
-            // start your next activity
             startActivity(intent)
         }
+
+
+
+
     }
-
-
-
 
 
 

@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.Passengers" />
+        <activity android:name=".activity.PopUpWindow" />
     </application>
 
 </manifest>
