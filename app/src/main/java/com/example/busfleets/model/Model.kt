@@ -1,4 +1,4 @@
-package com.example.busfleets
+package com.example.busfleets.model
 
 class Model(val day: String,
     val img: Int, val name: String, val data: String,

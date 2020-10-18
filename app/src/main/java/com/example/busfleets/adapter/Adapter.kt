@@ -1,4 +1,4 @@
-package com.example.busfleets
+package com.example.busfleets.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.busfleets.model.Model
+import com.example.busfleets.R
 
 class Adapter(val mCtx: Context, val resources: Int, val items: ArrayList<Model>):ArrayAdapter<Model>(mCtx, resources, items) {
 
